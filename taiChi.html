@@ -7,6 +7,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        
         .taiChi {
             margin: 100px auto;
             width: 100px;
@@ -17,6 +26,7 @@
             border-radius: 50%;
             position: relative;
             background-color: #fff;
+            animation: rotate 2s linear infinite;
         }
         
         .taiChi:before {
@@ -52,4 +62,4 @@
     <div class="taiChi"></div>
 </body>
 
-</html># taiChi
+</html>
